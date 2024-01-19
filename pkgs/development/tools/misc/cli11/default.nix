@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Command line parser for C++11";
     homepage = "https://github.com/CLIUtils/CLI11";
-    platforms = platforms.unix;
+    platforms = platforms.unix ++ platforms.windows;
     maintainers = with maintainers; [ ];
     license = licenses.bsd3;
   };

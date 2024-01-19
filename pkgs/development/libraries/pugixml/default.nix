@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://pugixml.org";
     license = licenses.mit;
     maintainers = with maintainers; [ pSub ];
-    platforms = platforms.unix;
+    platforms = platforms.unix ++ platforms.windows;
   };
 }
